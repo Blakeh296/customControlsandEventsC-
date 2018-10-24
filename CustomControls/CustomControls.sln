@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls", "CustomControls\CustomControls.csproj", "{5400BAA5-B246-466C-BCD4-F9BA85C411B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlandEventsDemo", "ControlandEventsDemo\ControlandEventsDemo.csproj", "{44FCF7E8-AF73-440B-9F18-EDA395D2C230}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5400BAA5-B246-466C-BCD4-F9BA85C411B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5400BAA5-B246-466C-BCD4-F9BA85C411B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5400BAA5-B246-466C-BCD4-F9BA85C411B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5400BAA5-B246-466C-BCD4-F9BA85C411B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44FCF7E8-AF73-440B-9F18-EDA395D2C230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44FCF7E8-AF73-440B-9F18-EDA395D2C230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44FCF7E8-AF73-440B-9F18-EDA395D2C230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44FCF7E8-AF73-440B-9F18-EDA395D2C230}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB1ABBA8-8C33-4CAF-990F-F165394BEE23}
+	EndGlobalSection
+EndGlobal
