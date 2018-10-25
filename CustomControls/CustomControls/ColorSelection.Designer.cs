@@ -36,6 +36,8 @@
             this.tbBlue = new System.Windows.Forms.TrackBar();
             this.pnlColor = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbHexaDec = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tbRed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGreen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbBlue)).BeginInit();
@@ -45,7 +47,7 @@
             // lblRed
             // 
             this.lblRed.AutoSize = true;
-            this.lblRed.Location = new System.Drawing.Point(6, 37);
+            this.lblRed.Location = new System.Drawing.Point(12, 31);
             this.lblRed.Name = "lblRed";
             this.lblRed.Size = new System.Drawing.Size(34, 16);
             this.lblRed.TabIndex = 0;
@@ -55,10 +57,10 @@
             // 
             this.tbRed.BackColor = System.Drawing.SystemColors.Control;
             this.tbRed.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tbRed.Location = new System.Drawing.Point(39, 21);
+            this.tbRed.Location = new System.Drawing.Point(52, 21);
             this.tbRed.Maximum = 255;
             this.tbRed.Name = "tbRed";
-            this.tbRed.Size = new System.Drawing.Size(250, 45);
+            this.tbRed.Size = new System.Drawing.Size(237, 45);
             this.tbRed.TabIndex = 1;
             this.tbRed.TickFrequency = 5;
             this.tbRed.Scroll += new System.EventHandler(this.trackBar_Scroll);
@@ -66,7 +68,7 @@
             // lblBlue
             // 
             this.lblBlue.AutoSize = true;
-            this.lblBlue.Location = new System.Drawing.Point(6, 117);
+            this.lblBlue.Location = new System.Drawing.Point(12, 117);
             this.lblBlue.Name = "lblBlue";
             this.lblBlue.Size = new System.Drawing.Size(35, 16);
             this.lblBlue.TabIndex = 2;
@@ -75,7 +77,7 @@
             // lblGreen
             // 
             this.lblGreen.AutoSize = true;
-            this.lblGreen.Location = new System.Drawing.Point(5, 78);
+            this.lblGreen.Location = new System.Drawing.Point(6, 78);
             this.lblGreen.Name = "lblGreen";
             this.lblGreen.Size = new System.Drawing.Size(45, 16);
             this.lblGreen.TabIndex = 3;
@@ -83,20 +85,20 @@
             // 
             // tbGreen
             // 
-            this.tbGreen.Location = new System.Drawing.Point(42, 69);
+            this.tbGreen.Location = new System.Drawing.Point(52, 69);
             this.tbGreen.Maximum = 255;
             this.tbGreen.Name = "tbGreen";
-            this.tbGreen.Size = new System.Drawing.Size(250, 45);
+            this.tbGreen.Size = new System.Drawing.Size(237, 45);
             this.tbGreen.TabIndex = 4;
             this.tbGreen.TickFrequency = 5;
             this.tbGreen.Scroll += new System.EventHandler(this.trackBar_Scroll);
             // 
             // tbBlue
             // 
-            this.tbBlue.Location = new System.Drawing.Point(39, 107);
+            this.tbBlue.Location = new System.Drawing.Point(52, 107);
             this.tbBlue.Maximum = 255;
             this.tbBlue.Name = "tbBlue";
-            this.tbBlue.Size = new System.Drawing.Size(250, 45);
+            this.tbBlue.Size = new System.Drawing.Size(237, 45);
             this.tbBlue.TabIndex = 5;
             this.tbBlue.TickFrequency = 5;
             this.tbBlue.Scroll += new System.EventHandler(this.trackBar_Scroll);
@@ -110,6 +112,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.tbHexaDec);
             this.groupBox1.Controls.Add(this.lblGreen);
             this.groupBox1.Controls.Add(this.pnlColor);
             this.groupBox1.Controls.Add(this.lblRed);
@@ -120,10 +124,26 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(298, 257);
+            this.groupBox1.Size = new System.Drawing.Size(299, 272);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ColorSelection";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(89, 244);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 16);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Hexadecimal :";
+            // 
+            // tbHexaDec
+            // 
+            this.tbHexaDec.Location = new System.Drawing.Point(189, 241);
+            this.tbHexaDec.Name = "tbHexaDec";
+            this.tbHexaDec.Size = new System.Drawing.Size(100, 22);
+            this.tbHexaDec.TabIndex = 7;
             // 
             // ColorSelection
             // 
@@ -131,7 +151,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox1);
             this.Name = "ColorSelection";
-            this.Size = new System.Drawing.Size(305, 263);
+            this.Size = new System.Drawing.Size(305, 278);
             ((System.ComponentModel.ISupportInitialize)(this.tbRed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGreen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbBlue)).EndInit();
@@ -151,5 +171,7 @@
         private System.Windows.Forms.TrackBar tbBlue;
         private System.Windows.Forms.Panel pnlColor;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox tbHexaDec;
+        private System.Windows.Forms.Label label1;
     }
 }
